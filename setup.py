@@ -14,16 +14,16 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 install_requires = ['requests >= 1.5.5', 'slugify']
 
 setup(
-    name='metabasepy',
-    version='1.4.0',
+    name='metabasepy2',
+    version='1.0.0',
     use_scm_version=True,
     setup_requires=['setuptools_scm', 'future'],
     description='metabase api python client',
     long_description=README,
     long_description_content_type='text/markdown',
-    author='mertsalik',
-    author_email='salik@itu.edu.tr',
-    url='https://github.com/mertsalik/metabasepy',
+    author='liadmo',
+    author_email='liad.mordekoviz@gmail.com',
+    url='https://github.com/liadmo/metabasepy',
     license=LICENSE,
     packages=find_packages(exclude=['tests', 'docs']),
     classifiers=[
