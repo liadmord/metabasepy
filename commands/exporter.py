@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from slugify import slugify
 import logging
 
-from metabasepy.client import Client, AuthorizationFailedException
+from metabasepy2.client import Client, AuthorizationFailedException
 
 logger = logging.getLogger(__name__)
 
