@@ -5,7 +5,7 @@ import os
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 
-from metabasepy.client import Client
+from metabasepy2.client import Client
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

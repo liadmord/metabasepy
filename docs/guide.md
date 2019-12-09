@@ -5,7 +5,7 @@
 first instantiate a client object
 
 ```python
-from metabasepy import Client
+from metabasepy2 import Client
 
 cli = Client(username="XXX", password="****", base_url="https://your-remote-metabase-url.com")
 
@@ -55,7 +55,7 @@ cli.collections.get(collection_id=1)
 ### Query SQL Data from Card
 
 ```python
-from metabasepy import Client, MetabaseTableParser
+from metabasepy2 import Client, MetabaseTableParser
 
 cli = Client(username="XXX", password="****", base_url="https://your-remote-metabase-url.com")
 query_response = cli.cards.query(card_id="1")
@@ -69,7 +69,7 @@ Now you have table of query results
     {
         'status': 'completed',
         'native_query': 'select \n u.first_name as "First Name",
-                                \n u.last_name as "Last Name", 
+                                \n u.last_name as "Last Name",
                                 \n t.amount as "Amount",
                                 \n t.description as "Description",
                                 \n t.created_date as "Transaction Date"
@@ -91,7 +91,7 @@ Now you have table of query results
     }
 
 Than you can loop through rows & columns
-    
+
 ```python
 for heading in data_table.columns:
     print(heading)

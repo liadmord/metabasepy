@@ -6,7 +6,7 @@ import logging
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 
-from metabasepy import Client, RequestException
+from metabasepy2 import Client, RequestException
 
 logger = logging.getLogger(__name__)
 
